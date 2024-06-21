@@ -2,8 +2,7 @@ import {
   RiInstagramLine,
   RiTwitterXLine,
   RiBehanceLine,
-  RiLinkedinLine,
-  RemixiconComponentType,
+  RiMailLine,
 } from "@remixicon/react";
 
 export const navigation = [
@@ -61,8 +60,28 @@ export const projects = [
 ];
 
 export const socials = [
-  { id: 0, name: "Instagram", url: "#", icon: <RiInstagramLine size={14} /> },
-  { id: 1, name: "X", url: "#", icon: <RiTwitterXLine size={14} /> },
-  { id: 2, name: "Behnace", url: "#", icon: <RiBehanceLine size={14} /> },
-  { id: 3, name: "Linked in", url: "#", icon: <RiLinkedinLine size={14} /> },
+  {
+    id: 0,
+    name: "Instagram",
+    url: "https://www.instagram.com/ramocreative/",
+    icon: <RiInstagramLine size={14} />,
+  },
+  {
+    id: 1,
+    name: "X",
+    url: "https://www.x.com/ramocreative/",
+    icon: <RiTwitterXLine size={14} />,
+  },
+  {
+    id: 2,
+    name: "Behnace",
+    url: "https://www.behance.net/ramocreative",
+    icon: <RiBehanceLine size={14} />,
+  },
+  {
+    id: 3,
+    name: "Email",
+    url: "mailto:contact@ramocreative.com",
+    icon: <RiMailLine size={14} />,
+  },
 ];
