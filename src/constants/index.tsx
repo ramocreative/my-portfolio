@@ -3,6 +3,9 @@ import {
   RiTwitterXLine,
   RiBehanceLine,
   RiMailLine,
+  RiSunLine,
+  RiMoonLine,
+  RiMailSendLine,
 } from "@remixicon/react";
 
 export const navigation = [
@@ -57,6 +60,12 @@ export const projects = [
     title: "Dupamicaffeine",
     desc: "anything3 ...",
   },
+];
+
+export const navIcons = [
+  { id: 0, name: "Light Button", icon: <RiSunLine size={14} /> },
+  { id: 1, name: "Dark Button", icon: <RiMoonLine size={14} /> },
+  { id: 2, name: "Send Email Button", icon: <RiMailSendLine size={14} /> },
 ];
 
 export const socials = [

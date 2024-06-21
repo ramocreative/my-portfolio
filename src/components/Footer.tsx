@@ -14,15 +14,15 @@ export default function Footer() {
             <p className="body-2 mb-8">
               Let's work together to create something amazing. Get in touch with
               me at{" "}
-              <Link href="" className="font-bold">
+              <Link href="" className="font-bold hover:underline">
                 contact@ramocreative.com
               </Link>{" "}
               or{" "}
-              <Link href="" className="font-bold">
+              <Link href="" className="font-bold hover:underline">
                 +964 751 132 0227
               </Link>
               . Follow me on{" "}
-              <Link href="" className="font-bold">
+              <Link href="" className="font-bold hover:underline">
                 @ramocreative
               </Link>{" "}
               to stay updated with my latest projects.
