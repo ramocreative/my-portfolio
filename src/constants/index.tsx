@@ -29,12 +29,12 @@ export const navigation = [
 export const sliderImages = [
   {
     id: 0,
-    url: "https://images.unsplash.com/photo-1717501805972-6f44905bc53c?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    url: "https://images.unsplash.com/photo-1704072383973-5f30f9c1076f?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "img1",
   },
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1717076521696-ea6d8ed0963a?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    url: "https://images.unsplash.com/photo-1717318104110-d8ef457d9c2e?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "img2",
   },
   {
@@ -63,9 +63,24 @@ export const projects = [
 ];
 
 export const navIcons = [
-  { id: 0, name: "Light Button", icon: <RiSunLine size={14} /> },
-  { id: 1, name: "Dark Button", icon: <RiMoonLine size={14} /> },
-  { id: 2, name: "Send Email Button", icon: <RiMailSendLine size={14} /> },
+  {
+    id: 0,
+    name: "Light Button",
+    icon: <RiSunLine size={14} />,
+    styles: "flex w-10 h-10 bg-n-13 text-n-1 rounded-full",
+  },
+  {
+    id: 1,
+    name: "Dark Button",
+    icon: <RiMoonLine size={14} />,
+    styles: "flex w-10 h-10 bg-n-13 text-n-1 rounded-full",
+  },
+  {
+    id: 2,
+    name: "Send Email Button",
+    icon: <RiMailSendLine size={14} />,
+    styles: "flex w-10 h-10 bg-n-13 text-n-1 rounded-full",
+  },
 ];
 
 export const socials = [

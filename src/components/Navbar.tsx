@@ -89,7 +89,12 @@ export default function Navbar() {
       </button>
       <div className="hidden lg:flex items-center gap-6 ml-auto">
         {navIcons.map((item) => (
-          <button key={item.id}>{item.icon}</button>
+          <button
+            className={`transition-transform hover:-rotate-12 ${item.styles}`}
+            key={item.id}
+          >
+            {item.icon}
+          </button>
         ))}
       </div>
     </header>
