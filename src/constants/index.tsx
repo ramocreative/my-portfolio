@@ -65,23 +65,31 @@ export const socials = [
     name: "Instagram",
     url: "https://www.instagram.com/ramocreative/",
     icon: <RiInstagramLine size={14} />,
+    styles:
+      "flex items-center justify-center w-10 h-10 text-n-4 hover:text-color-1 bg-n-13 rounded-full transition-colors hover:bg-n-12",
   },
   {
     id: 1,
     name: "X",
     url: "https://www.x.com/ramocreative/",
     icon: <RiTwitterXLine size={14} />,
+    styles:
+      "flex items-center justify-center w-10 h-10 text-n-4 hover:text-color-1 bg-n-13 rounded-full transition-colors hover:bg-n-12",
   },
   {
     id: 2,
     name: "Behnace",
     url: "https://www.behance.net/ramocreative",
     icon: <RiBehanceLine size={14} />,
+    styles:
+      "flex items-center justify-center w-10 h-10 text-n-4 hover:text-color-1 bg-n-13 rounded-full transition-colors hover:bg-n-12",
   },
   {
     id: 3,
     name: "Email",
     url: "mailto:contact@ramocreative.com",
     icon: <RiMailLine size={14} />,
+    styles:
+      "flex items-center justify-center w-10 h-10 text-n-4 hover:text-color-1 bg-n-13 rounded-full transition-colors hover:bg-n-12",
   },
 ];

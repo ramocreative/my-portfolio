@@ -38,7 +38,7 @@ export default function Footer() {
             {socials.map((social) => (
               <li key={social.id}>
                 <Link
-                  className="flex items-center justify-center w-10 h-10 text-n-4 hover:text-color-1 bg-n-13 rounded-full transition-colors hover:bg-n-12"
+                  className={social.styles}
                   href={social.url}
                   target="_blank"
                 >
