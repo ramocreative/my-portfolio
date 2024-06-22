@@ -4,7 +4,7 @@ import { socials } from "@/constants";
 
 export default function Footer() {
   return (
-    <footer className="pt-24">
+    <footer>
       <div className="bg-color-1">
         <div className="container flex max-xl:flex-col justify-between items-center gap-10 max-xl:gap-24 py-16">
           <div>

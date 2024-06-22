@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <Section customPaddings="py-0">
       <div className="min-h-[78vh] flex flex-col justify-between container">
-        <div className="relative w-full h-[60vh] overflow-hidden rounded-3xl mb-24 max-lg:order-2">
+        <div className="relative w-full h-[60vh] overflow-hidden mb-24 max-lg:order-2">
           <ImageSlider />
         </div>
         <div className="flex max-lg:flex-col max-lg:py-12 max-lg:text-center *:flex-1">

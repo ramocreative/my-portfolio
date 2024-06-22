@@ -2,24 +2,19 @@
 
 import { sliderData } from "@/constants/index";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Button from "./Button";
 
 export default function ImageSlider() {
   const [imageIndex, setImageIndex] = useState(0);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setImageIndex(imageIndex + 1);
-      if (imageIndex > 1) {
-        setImageIndex(0);
-      }
-    }, 5000);
-  });
+  const handleClick = (index: number) => {
+    setImageIndex(index);
+  };
 
   return (
-    <div className="flex max-xl:flex-col w-full h-full">
-      <div className="relative bg-neutral-200 flex-[4] h-full isolate overflow-hidden">
+    <div className="flex max-2xl:flex-col w-full h-full">
+      <div className="relative bg-neutral-200 flex-[3] h-full isolate overflow-hidden rounded-3xl">
         <div className="flex flex-col h-full">
           {sliderData.map((item) => (
             <div
@@ -85,7 +80,26 @@ export default function ImageSlider() {
           />
         ))}
       </div>
-      <div className="flex-[1] p-14">Placeholder</div>
+      <ul className="flex flex-col justify-between flex-[1] px-14 py-8">
+        {sliderData.map((item, index) => (
+          <li
+            key={item.id}
+            className={`cursor-pointer relative flex items-center gap-6 p-8 overflow-hidden before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:transition-[background-color] before:duration-700 ${
+              imageIndex === item.id ? "before:bg-n-2" : ""
+            } rounded-3xl`}
+            onClick={() => handleClick(index)}
+          >
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={1920}
+              height={1080}
+              className="w-24 h-24 object-cover rounded-3xl"
+            />
+            <h6 className="h6">{item.title}</h6>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

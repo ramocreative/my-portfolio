@@ -29,6 +29,7 @@ const config: Config = {
         },
         n: {
           1: "#FFFFFF",
+          2: "#EBEBEB",
           4: "#A3A3A3",
           10: "#292929",
           12: "#141414",
