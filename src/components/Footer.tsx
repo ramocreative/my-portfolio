@@ -8,12 +8,12 @@ export default function Footer() {
       <div className="bg-color-1">
         <div className="container flex max-xl:flex-col justify-between items-center gap-10 max-xl:gap-24 py-16">
           <div>
-            <h2 className="h2 mb-4 max-w-[17ch]">
+            <h2 className="h3 mb-4 max-w-[17ch]">
               Ready to take your brand to the next level?
             </h2>
             <h6 className="h6">
-              Let's work together to create something amazing. Get in touch with
-              me at{" "}
+              Let's work together to create something amazing. <br /> Get in
+              touch with me at{" "}
               <Link href="" className="font-bold hover:underline">
                 contact@ramocreative.com
               </Link>{" "}
