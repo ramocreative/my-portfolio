@@ -8,6 +8,10 @@
   --font-sora: "Sora", sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   scroll-behavior: smooth;
 }

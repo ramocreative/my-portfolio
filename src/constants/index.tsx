@@ -26,20 +26,33 @@ export const navigation = [
   },
 ];
 
-export const sliderImages = [
+export const sliderData = [
   {
     id: 0,
-    url: "https://images.unsplash.com/photo-1704072383973-5f30f9c1076f?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Brand Identity",
+    title: "placeholder",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga tenetur illo consequatur voluptatibus quo error? Minima vitae dolor, alias reprehenderit aspernatur dolores similique perspiciatis consectetur quasi nesciunt animi voluptatem cumque!",
+    image:
+      "https://images.unsplash.com/photo-1704072383973-5f30f9c1076f?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "img1",
+    new: true,
   },
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1717318104110-d8ef457d9c2e?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Brand Identity",
+    title: "placeholder",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga tenetur illo consequatur voluptatibus quo error? Minima vitae dolor, alias reprehenderit aspernatur dolores similique perspiciatis consectetur quasi nesciunt animi voluptatem cumque!",
+    image:
+      "https://images.unsplash.com/photo-1717318104110-d8ef457d9c2e?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "img2",
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1714548474528-4c78dc4a9508?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Brand Identity",
+    title: "placeholder",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga tenetur illo consequatur voluptatibus quo error? Minima vitae dolor, alias reprehenderit aspernatur dolores similique perspiciatis consectetur quasi nesciunt animi voluptatem cumque!",
+    image:
+      "https://images.unsplash.com/photo-1714548474528-4c78dc4a9508?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "img3",
   },
 ];
