@@ -3,25 +3,71 @@
 import { sliderData } from "@/constants/index";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Button from "./Button";
 
 export default function ImageSlider() {
   const [imageIndex, setImageIndex] = useState(0);
 
-  setTimeout(() => {
-    setImageIndex(imageIndex + 1);
-    if (imageIndex > 1) {
-      setImageIndex(0);
-    }
-  }, 5000);
+  useEffect(() => {
+    setTimeout(() => {
+      setImageIndex(imageIndex + 1);
+      if (imageIndex > 1) {
+        setImageIndex(0);
+      }
+    }, 5000);
+  });
 
   return (
     <div className="flex max-xl:flex-col w-full h-full">
-      <div className="relative bg-neutral-200 flex-[4] isolate">
-        <ul>
+      <div className="relative bg-neutral-200 flex-[4] h-full isolate overflow-hidden">
+        <div className="flex flex-col h-full">
           {sliderData.map((item) => (
-            <li key={item.id}>{imageIndex === item.id && item.title}</li>
+            <div
+              key={item.id}
+              className={`absolute top-14 bottom-14 left-14 right-14 md: flex flex-col text-n-1 ${
+                imageIndex === item.id ? "*opacity-100" : "*:opacity-0"
+              }`}
+            >
+              <div className="flex items-center mb-auto *:transition-[opacity,transform] *:duration-700">
+                <small
+                  className={`caption mr-auto max-sm:mr-0 ${
+                    imageIndex === item.id
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  {item.category}
+                </small>
+                <small
+                  className={`tagline bg-n-1/70 backdrop-blur-sm text-n-13 p-3 ${
+                    item.new ? "inline" : "hidden"
+                  } ${
+                    imageIndex === item.id
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  {item.newMessage}
+                </small>
+              </div>
+              <h3
+                className={`h3 mb-4 ${
+                  imageIndex === item.id
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >
+                {item.title}
+              </h3>
+              <p className="body-2 mb-12 max-sm:hidden">{item.desc}</p>
+              <div className={`z-10 ${imageIndex === item.id ? "" : "hidden"}`}>
+                <Button title="button" white={true} />
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
+
+        <div className="absolute inset-0 bg-gradient-to-r from-[#00000080] -z-10" />
 
         {sliderData.map((item) => (
           <Image
@@ -30,11 +76,11 @@ export default function ImageSlider() {
             alt={item.title}
             width={1920}
             height={1080}
-            className={`absolute top-0 left-0 transition-[opacity,transform] duration-500 ${
+            className={`absolute top-0 left-0 transition-[opacity,transform] duration-700 ${
               imageIndex === item.id
                 ? "opacity-100 translate-x-0"
-                : "!opacity-0 translate-x-20"
-            } object-cover w-full h-full -z-10`}
+                : "opacity-0 translate-x-20"
+            } object-cover w-full h-full -z-20`}
             priority
           />
         ))}

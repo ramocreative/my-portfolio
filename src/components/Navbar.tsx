@@ -5,7 +5,6 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { navIcons, navigation, socials } from "@/constants/index";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { RiMailSendFill, RiMailSendLine, RiSunLine } from "@remixicon/react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -89,10 +88,7 @@ export default function Navbar() {
       </button>
       <div className="hidden lg:flex items-center gap-6 ml-auto">
         {navIcons.map((item) => (
-          <button
-            className={`transition-transform hover:-rotate-12 ${item.styles}`}
-            key={item.id}
-          >
+          <button className={`${item.styles}`} key={item.id}>
             {item.icon}
           </button>
         ))}

@@ -29,28 +29,29 @@ export const navigation = [
 export const sliderData = [
   {
     id: 0,
-    category: "Brand Identity",
+    category: "Brand Identity0",
     title: "placeholder0",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga tenetur illo consequatur voluptatibus quo error? Minima vitae dolor, alias reprehenderit aspernatur dolores similique perspiciatis consectetur quasi nesciunt animi voluptatem cumque!",
+    desc: "Lorem ipsum0, dolor sit amet consectetur adipisicing elit. Fuga tenetur illo consequatur voluptatibus quo error? Minima vitae dolor, alias reprehenderit aspernatur dolores similique perspiciatis consectetur quasi nesciunt animi voluptatem cumque!",
     image:
       "https://images.unsplash.com/photo-1704072383973-5f30f9c1076f?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "img1",
-    new: true,
   },
   {
     id: 1,
-    category: "Brand Identity",
+    category: "Brand Identity1",
     title: "placeholder1",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga tenetur illo consequatur voluptatibus quo error? Minima vitae dolor, alias reprehenderit aspernatur dolores similique perspiciatis consectetur quasi nesciunt animi voluptatem cumque!",
+    desc: "Lorem ipsum1, dolor sit amet consectetur adipisicing elit. Fuga tenetur illo consequatur voluptatibus quo error? Minima vitae dolor, alias reprehenderit aspernatur dolores similique perspiciatis consectetur quasi nesciunt animi voluptatem cumque!",
     image:
       "https://images.unsplash.com/photo-1717318104110-d8ef457d9c2e?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "img2",
+    new: true,
+    newMessage: "Added recently",
   },
   {
     id: 2,
-    category: "Brand Identity",
+    category: "Brand Identity2",
     title: "placeholder2",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga tenetur illo consequatur voluptatibus quo error? Minima vitae dolor, alias reprehenderit aspernatur dolores similique perspiciatis consectetur quasi nesciunt animi voluptatem cumque!",
+    desc: "Lorem ipsum2, dolor sit amet consectetur adipisicing elit. Fuga tenetur illo consequatur voluptatibus quo error? Minima vitae dolor, alias reprehenderit aspernatur dolores similique perspiciatis consectetur quasi nesciunt animi voluptatem cumque!",
     image:
       "https://images.unsplash.com/photo-1714548474528-4c78dc4a9508?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "img3",
@@ -80,19 +81,22 @@ export const navIcons = [
     id: 0,
     name: "Light Button",
     icon: <RiSunLine size={14} />,
-    styles: "flex w-10 h-10 bg-n-13 text-n-1 rounded-full",
+    styles:
+      "flex items-center justify-center w-10 h-10 text-n-4 hover:text-color-1 bg-n-13 rounded-full transition-colors hover:bg-n-12",
   },
   {
     id: 1,
     name: "Dark Button",
     icon: <RiMoonLine size={14} />,
-    styles: "flex w-10 h-10 bg-n-13 text-n-1 rounded-full",
+    styles:
+      "flex items-center justify-center w-10 h-10 text-n-4 hover:text-color-1 bg-n-13 rounded-full transition-colors hover:bg-n-12",
   },
   {
     id: 2,
     name: "Send Email Button",
     icon: <RiMailSendLine size={14} />,
-    styles: "flex w-10 h-10 bg-n-13 text-n-1 rounded-full",
+    styles:
+      "flex items-center justify-center w-10 h-10 text-n-4 hover:text-color-1 bg-n-13 rounded-full transition-colors hover:bg-n-12",
   },
 ];
 

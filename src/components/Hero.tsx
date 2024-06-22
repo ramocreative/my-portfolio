@@ -10,7 +10,7 @@ export default function Hero() {
           <ImageSlider />
         </div>
         <div className="flex max-lg:flex-col max-lg:py-12 max-lg:text-center *:flex-1">
-          <h1 className="h1 max-lg:mb-4 max-w-[20ch]">
+          <h1 className="h1 max-lg:mb-4 max-w-[20ch] mx-auto">
             Let’s make your ideas become{" "}
             <span className="text-color-1">reality</span>
           </h1>
