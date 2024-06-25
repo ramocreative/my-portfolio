@@ -5,11 +5,11 @@ import ImageSlider from "./ImageSlider";
 export default function Hero() {
   return (
     <Section customPaddings="py-0">
-      <div className="min-h-[78vh] flex flex-col justify-between container">
-        <div className="relative w-full h-[60vh] overflow-hidden mb-24 max-lg:order-2">
+      <div className="container">
+        <div>
           <ImageSlider />
         </div>
-        <div className="flex max-lg:flex-col max-lg:py-12 max-lg:text-center *:flex-1">
+        <div className="flex max-lg:flex-col max-lg:py-12 max-lg:text-center *:flex-1 py-24">
           <h1 className="h1 max-lg:mb-4 max-w-[20ch] mx-auto">
             Let’s make your ideas become{" "}
             <span className="text-color-1">reality</span>
